@@ -1,0 +1,27 @@
+<resources>
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">#FFFFFF</item> <!-- Background color -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Title and message text color -->
+        <item name="buttonBarPositiveButtonStyle">@style/CustomAlertDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CustomAlertDialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/CustomAlertDialogButton</item>
+    </style>
+
+    <style name="CustomAlertDialogButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">#007BFF</item> <!-- Button text color -->
+    </style>
+
+    <style name="ActiveTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/nav_active</item>
+    </style>
+
+    <style name="InactiveTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/nav_inactive</item>
+    </style>
+</resources>
+
+
+

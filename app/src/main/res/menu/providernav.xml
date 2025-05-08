@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+<!--    <item-->
+<!--        android:id="@+id/action_vehicle"-->
+<!--        android:title="Vehicles"-->
+<!--        android:icon="@drawable/profile"/>-->
+
+    <item
+        android:id="@+id/action_viewvehi"
+        android:title="View Vehicle"
+        android:icon="@drawable/car"/>
+
+    <item
+        android:id="@+id/action_booking"
+        android:title="Bookings"
+        android:icon="@drawable/prov"/>
+
+<!--    <item-->
+<!--        android:id="@+id/action_profile"-->
+<!--        android:title="My Profile"-->
+<!--        android:icon="@drawable/profile"/>-->
+</menu>

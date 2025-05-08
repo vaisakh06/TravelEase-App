@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    tools:context=".VEHICLE_PROVIDER_MODULE.AddVehicles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:padding="10dp"
+            android:id="@+id/toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Vehicles"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sofia"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Vehicle Name -->
+        <EditText
+            android:id="@+id/vehiclename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Vehicle Type -->
+        <EditText
+            android:id="@+id/vtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Type"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Brand -->
+        <EditText
+            android:id="@+id/vbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brand"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Registration Number -->
+        <EditText
+            android:id="@+id/registrationno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Seating Capacity -->
+        <EditText
+            android:id="@+id/seatingcapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seating Capacity"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Luggage Capacity -->
+        <EditText
+            android:id="@+id/luggagecapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Luggage Capacity"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Fuel Type -->
+        <EditText
+            android:id="@+id/fueltype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fuel Type"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp" />
+
+        <!-- Vehicle Color -->
+        <EditText
+            android:id="@+id/vcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Color"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Rental Price -->
+        <EditText
+            android:id="@+id/rentalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rental Price"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp" />
+
+        <!-- Vehicle Image -->
+        <ImageView
+            android:id="@+id/vimage"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/cyan"
+            android:textColor="@color/white" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Add Vehicle"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

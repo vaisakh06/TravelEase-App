@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/backk"
+    tools:context=".ADMIN_MODULE.AddPackages">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading: Add Packages -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Packages"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:fontFamily="@font/sofia"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Package Image Upload -->
+        <ImageView
+            android:id="@+id/packageImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/cyan"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Package Name -->
+        <EditText
+            android:id="@+id/packageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Package Name"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Package Destination -->
+        <EditText
+            android:id="@+id/destiName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination Name"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Package Price -->
+        <EditText
+            android:id="@+id/packagePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price ($)"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Package Duration -->
+        <EditText
+            android:id="@+id/packageDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (Days)"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Package Description -->
+        <EditText
+            android:id="@+id/packageDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Inclusions -->
+        <EditText
+            android:id="@+id/packageInclusions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inclusions (e.g., Hotel, Meals)"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:minHeight="80dp"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Exclusions -->
+        <EditText
+            android:id="@+id/packageExclusions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exclusions (e.g., Personal Expenses, Travel Insurance)"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:minHeight="80dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Departure Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/departureDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Departure Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Return Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/returnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Return Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/sofia"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/addPackageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Package"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>
